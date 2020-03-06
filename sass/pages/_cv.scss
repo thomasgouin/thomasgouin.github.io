@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    &__photo{
+        width:33%;
+        min-width: 160px;
+        min-height: 160px;
+        padding:5%;
+        background-color: $color-secondary;
+        &__thomas{
+            border-radius: 70%;
+        }
+    }
+    &__titre{
+        width: 67%;
+        line-height: 35px;
+        margin: auto 0;
+        padding-left: 40px;
+        &__span{
+            color: $color-primary;
+        }
+        &__job{
+            font-size: 23px;
+            color: $color-primary;
+            text-transform: none;
+            position: relative; 
+            &::after{
+                position: absolute;
+                display: block;
+                background: none;
+                width: 70px;
+                content: '';
+                border: 1px solid $color-secondary;
+                bottom: -3px;
+                left: 0;
+            }
+        }
+    }
+}
+.main-container{
+    display: flex;
+}
+.aside{
+    width: 33%;
+    min-width: 160px;
+    background-color: $color-secondary;
+    &__h3{
+        height: 45px;
+    }
+    &__paragraph{
+        margin: $margin-bottom $margin-left*2;
+    }
+}
+.section-holder{
+    width: 67%;
+    padding:0 $padding-right;
+}
+.section{
+    margin-left: $margin-left;
+    &__h2{
+        padding-left: $padding-left*6;
+        position: relative;
+        margin-bottom: $margin-bottom;
+        &::after{
+            content: '';
+            position: absolute;
+            border: solid 1px $color-secondary;
+            left: 0px;
+            bottom: -5px;
+            width: 600px;
+        }
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: $margin-bottom;
+    }
+    &__date{
+        min-width: 14%;
+        margin-right: $margin-right*3;
+        margin-bottom: $margin-bottom;
+    }       
+    &__description{
+        min-width: 70%;
+        max-width: 400px;
+    }
+}

@@ -1,3 +1,146 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  margin: 0;
+}
 
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+}
+
+p {
+  color: #454647;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+h1 {
+  color: #2196f3;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 2.8em;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #2196f3;
+  background-color: #454647;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: #454647;
+  font-weight: 200;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.header__photo {
+  width: 33%;
+  min-width: 160px;
+  min-height: 160px;
+  padding: 5%;
+  background-color: #2196f3;
+}
+.header__photo__thomas {
+  border-radius: 70%;
+}
+.header__titre {
+  width: 67%;
+  line-height: 35px;
+  margin: auto 0;
+  padding-left: 40px;
+}
+.header__titre__span {
+  color: #454647;
+}
+.header__titre__job {
+  font-size: 23px;
+  color: #454647;
+  text-transform: none;
+  position: relative;
+}
+.header__titre__job::after {
+  position: absolute;
+  display: block;
+  background: none;
+  width: 70px;
+  content: "";
+  border: 1px solid #2196f3;
+  bottom: -3px;
+  left: 0;
+}
+
+.main-container {
+  display: flex;
+}
+
+.aside {
+  width: 33%;
+  min-width: 160px;
+  background-color: #2196f3;
+}
+.aside__h3 {
+  height: 45px;
+}
+.aside__paragraph {
+  margin: 25px 40px;
+}
+
+.section-holder {
+  width: 67%;
+  padding: 0 10px;
+}
+
+.section {
+  margin-left: 20px;
+}
+.section__h2 {
+  padding-left: 60px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.section__h2::after {
+  content: "";
+  position: absolute;
+  border: solid 1px #2196f3;
+  left: 0px;
+  bottom: -5px;
+  width: 600px;
+}
+.section__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.section__date {
+  min-width: 14%;
+  margin-right: 60px;
+  margin-bottom: 25px;
+}
+.section__description {
+  min-width: 70%;
+  max-width: 400px;
+}
 
 /*# sourceMappingURL=style.css.map */

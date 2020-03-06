@@ -1,0 +1,50 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    background: none;
+}
+
+p{
+    color: $color-primary;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+h1{
+    color: $color-secondary;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2.8em;
+}
+
+h2{
+    text-transform: uppercase;
+    color: $color-third;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+h3{
+    text-transform: uppercase;
+    color: $color-secondary;
+    background-color: $color-primary;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.6em;
+}
+h4{
+    text-transform: uppercase;
+    color:$color-primary;
+    font-weight: 200;
+    font-size:1.3em;
+    margin: 0;
+}
