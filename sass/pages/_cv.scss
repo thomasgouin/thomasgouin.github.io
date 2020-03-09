@@ -1,13 +1,11 @@
 .header{
     display: flex;
     flex-direction: row;
-    border: solid blue 5px;
     &__photo{
         width:33%;
         min-width: 160px;
         min-height: 160px;
         padding:5%;
-        border: solid red 5px;
         background-color: $color-secondary;
         &__thomas{
             border-radius: 100%;
@@ -20,10 +18,9 @@
         padding-left: $padding-left*7;
         &__span{
             color: $color-primary;
-            line-height: 35px;
         }
         &__job{
-            font-size: 23px;
+            font-size: 30px;
             color: $color-primary;
             text-transform: none;
             position: relative; 
@@ -31,7 +28,7 @@
                 position: absolute;
                 display: block;
                 background: none;
-                width: 70px;
+                width: 80px;
                 content: '';
                 border: 1px solid $color-secondary;
                 bottom: -3px;
@@ -45,7 +42,6 @@
 }
 .aside{
     width: 33%;
-    border: green 5px solid;
     min-width: 160px;
     background-color: $color-secondary;
     &__h3{
@@ -57,7 +53,6 @@
 }
 .section-holder{
     width: 67%;
-    border: purple solid 5px;
     padding:0 $padding-right;
 }
 .section{
@@ -92,10 +87,5 @@
     }
     &__job{
         line-height: 2.2em;
-    }
-}
-@media only screen and (min-width: 300px) and (max-width: 480px){
-    .main-container{
-        flex-direction: row;
     }
 }

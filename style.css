@@ -5891,7 +5891,8 @@ h2 {
   text-transform: uppercase;
   color: black;
   font-weight: 600;
-  font-size: 1.6em;
+  font-size: 2em;
+  line-height: 1em;
 }
 
 h3 {
@@ -5907,21 +5908,19 @@ h4 {
   text-transform: uppercase;
   color: #454647;
   font-weight: 200;
-  font-size: 1.3em;
+  font-size: 1.6em;
   margin: 0;
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  border: solid blue 5px;
 }
 .header__photo {
   width: 33%;
   min-width: 160px;
   min-height: 160px;
   padding: 5%;
-  border: solid red 5px;
   background-color: #2196f3;
 }
 .header__photo__thomas {
@@ -5935,10 +5934,9 @@ h4 {
 }
 .header__titre__span {
   color: #454647;
-  line-height: 35px;
 }
 .header__titre__job {
-  font-size: 23px;
+  font-size: 30px;
   color: #454647;
   text-transform: none;
   position: relative;
@@ -5947,7 +5945,7 @@ h4 {
   position: absolute;
   display: block;
   background: none;
-  width: 70px;
+  width: 80px;
   content: "";
   border: 1px solid #2196f3;
   bottom: -3px;
@@ -5960,7 +5958,6 @@ h4 {
 
 .aside {
   width: 33%;
-  border: green 5px solid;
   min-width: 160px;
   background-color: #2196f3;
 }
@@ -5973,7 +5970,6 @@ h4 {
 
 .section-holder {
   width: 67%;
-  border: purple solid 5px;
   padding: 0 10px;
 }
 
@@ -6012,9 +6008,65 @@ h4 {
   line-height: 2.2em;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 730px) {
+  .header {
+    flex-direction: column;
+  }
+  .header__photo {
+    width: 100%;
+    background-color: white;
+    padding: 0;
+  }
+  .header__photo__thomas {
+    max-width: 50%;
+    border: #2196f3 solid 5px;
+    margin-left: 25%;
+    margin-top: 25px;
+    margin-bottom: 12.5px;
+  }
+  .header__titre {
+    font-size: 2.5em;
+    color: #2196f3;
+    width: 100%;
+    padding: 45px 0;
+    text-align: center;
+    line-height: 30px;
+  }
+  .header__titre__job {
+    font-size: 0.5em;
+    color: #454647;
+    line-height: 25px;
+  }
+
   .main-container {
-    flex-direction: row;
+    flex-direction: column;
+  }
+
+  .aside {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+  }
+  .aside__paragraph {
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    margin-left: 40px;
+  }
+  .aside__h3 {
+    border-radius: 10px;
+  }
+
+  .section-holder {
+    width: 100%;
+  }
+
+  .section {
+    margin-left: 20px;
+    margin-top: 75px;
+  }
+  .section__h2 {
+    padding-left: 30px;
+    font-size: 1.8em;
   }
 }
 
