@@ -88,4 +88,12 @@
     &__job{
         line-height: 2.2em;
     }
+    &__container-reco{
+        margin-right: $margin-right*4;
+        margin-bottom: $margin-bottom;
+        &__nom{
+            text-transform: uppercase;
+            line-height: 2em;
+        }
+    }
 }

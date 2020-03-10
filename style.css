@@ -6007,6 +6007,14 @@ h4 {
 .section__job {
   line-height: 2.2em;
 }
+.section__container-reco {
+  margin-right: 80px;
+  margin-bottom: 25px;
+}
+.section__container-reco__nom {
+  text-transform: uppercase;
+  line-height: 2em;
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 730px) {
   .header {
