@@ -20,6 +20,7 @@
             padding: $padding-bottom*3 0;
             text-align: center;
             line-height: 30px;
+            margin-bottom: 1.1em;
             &__job{
                 font-size: .5em;
                 color: $color-primary;
@@ -34,13 +35,19 @@
         width: 90%;
         margin: auto;
         background-color: white;
+        border: green solid 5px;
         &__paragraph{
             margin-top: $margin-top/2;
             margin-bottom: $margin-bottom/2;
             margin-left: $margin-left;
+            display: none;
         }
         &__h3{
             border-radius: 10px;
+            margin-bottom: 1em;
+            &:target ~ .aside__paragraph{
+                display: block;
+            }
         }
     }
     .section-holder{

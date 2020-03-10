@@ -6046,6 +6046,7 @@ h4 {
     padding: 45px 0;
     text-align: center;
     line-height: 30px;
+    margin-bottom: 1.1em;
   }
   .header__titre__job {
     font-size: 0.5em;
@@ -6061,14 +6062,20 @@ h4 {
     width: 90%;
     margin: auto;
     background-color: white;
+    border: green solid 5px;
   }
   .aside__paragraph {
     margin-top: 12.5px;
     margin-bottom: 12.5px;
     margin-left: 20px;
+    display: none;
   }
   .aside__h3 {
     border-radius: 10px;
+    margin-bottom: 1em;
+  }
+  .aside__h3:target ~ .aside__paragraph {
+    display: block;
   }
 
   .section-holder {
