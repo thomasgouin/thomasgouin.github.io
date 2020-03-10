@@ -5966,6 +5966,13 @@ h4 {
 }
 .aside__paragraph {
   margin: 25px 20px;
+  text-align: justify;
+}
+.aside__link {
+  text-decoration: underline;
+}
+.aside__link:hover {
+  color: white;
 }
 
 .section-holder {
@@ -6058,7 +6065,7 @@ h4 {
   .aside__paragraph {
     margin-top: 12.5px;
     margin-bottom: 12.5px;
-    margin-left: 40px;
+    margin-left: 20px;
   }
   .aside__h3 {
     border-radius: 10px;

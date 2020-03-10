@@ -49,6 +49,13 @@
     }
     &__paragraph{
         margin: $margin-bottom $margin-left;
+        text-align: justify;
+    }
+    &__link{
+        text-decoration: underline;
+        &:hover{
+            color: white;
+        }
     }
 }
 .section-holder{
