@@ -1,4 +1,11 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 730px) {
+    body{
+        max-width: auto;
+        margin: 0;
+        box-shadow: none;
+    }    
+
+
     .header{
         flex-direction: column;
         &__photo{
@@ -35,19 +42,16 @@
         width: 90%;
         margin: auto;
         background-color: white;
-        border: green solid 5px;
+        border: red solid 5px;
         &__paragraph{
             margin-top: $margin-top/2;
             margin-bottom: $margin-bottom/2;
             margin-left: $margin-left;
-            display: none;
+           
         }
         &__h3{
             border-radius: 10px;
             margin-bottom: 1em;
-            &:target ~ .aside__paragraph{
-                display: block;
-            }
         }
     }
     .section-holder{

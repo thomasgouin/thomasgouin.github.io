@@ -5863,6 +5863,12 @@ readers do not read off random characters that represent icons */
   margin: 0;
 }
 
+body {
+  max-width: 1024px;
+  margin: 20px auto;
+  box-shadow: 10px 5px 20px black;
+}
+
 img {
   max-width: 100%;
 }
@@ -5915,11 +5921,11 @@ h4 {
 .header {
   display: flex;
   flex-direction: row;
+  border: blue 5px solid;
 }
 .header__photo {
   width: 33%;
   min-width: 160px;
-  min-height: 160px;
   padding: 5%;
   background-color: #2196f3;
 }
@@ -5996,6 +6002,11 @@ h4 {
   bottom: -15px;
   width: 95%;
 }
+.section__h2::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+}
 .section__container {
   display: flex;
   flex-wrap: wrap;
@@ -6024,6 +6035,12 @@ h4 {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 730px) {
+  body {
+    max-width: auto;
+    margin: 0;
+    box-shadow: none;
+  }
+
   .header {
     flex-direction: column;
   }
@@ -6062,20 +6079,16 @@ h4 {
     width: 90%;
     margin: auto;
     background-color: white;
-    border: green solid 5px;
+    border: red solid 5px;
   }
   .aside__paragraph {
     margin-top: 12.5px;
     margin-bottom: 12.5px;
     margin-left: 20px;
-    display: none;
   }
   .aside__h3 {
     border-radius: 10px;
     margin-bottom: 1em;
-  }
-  .aside__h3:target ~ .aside__paragraph {
-    display: block;
   }
 
   .section-holder {
