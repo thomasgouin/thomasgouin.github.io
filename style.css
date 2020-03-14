@@ -5947,7 +5947,7 @@ h4 {
   background-color: #2196f3;
 }
 .header__photo__thomas {
-  border-radius: 100%;
+  border-radius: 50%;
 }
 .header__titre {
   width: 67%;
@@ -5998,6 +5998,63 @@ h4 {
   color: white;
 }
 
+.icones-loisir {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  color: #454647;
+  margin-top: 25px;
+}
+.icones-loisir__motorcycle {
+  border: 5px solid #454647;
+  font-size: 50px;
+  width: 25%;
+}
+.icones-loisir__motorcycle::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.icones-loisir__volleyball {
+  border: 5px solid #454647;
+  font-size: 50px;
+  width: 25%;
+  position: relative;
+}
+.icones-loisir__volleyball::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  position: absolute;
+  top: 11%;
+  right: 11%;
+}
+.icones-loisir__cinema {
+  border: 5px solid #454647;
+  font-size: 50px;
+  width: 25%;
+}
+.icones-loisir__cinema::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+
 .section-holder {
   width: 67%;
   padding: 0 10px;
@@ -6036,8 +6093,21 @@ h4 {
 }
 .section__date {
   min-width: 14%;
-  margin-right: 100px;
+  margin-right: 60px;
+  margin-left: 40px;
   margin-bottom: 25px;
+  position: relative;
+}
+.section__date::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: #2196f3;
+  position: absolute;
+  left: -30px;
+  top: 6px;
 }
 .section__description {
   min-width: 60%;
@@ -6071,6 +6141,19 @@ h4 {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
+}
+
+.date-actuelle::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+
+.date-passee::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 0.7rem;
+  content: "";
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 730px) {

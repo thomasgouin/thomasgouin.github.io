@@ -9,7 +9,7 @@
         padding:5%;
         background-color: $color-secondary;
         &__thomas{
-            border-radius: 100%;
+            border-radius: 50%;
         }
     }
     &__titre{
@@ -59,6 +59,51 @@
         }
     }
 }
+.icones-loisir{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: $color-primary;
+    margin-top: $margin-top;
+    &__motorcycle{
+        border: 5px solid $color-primary;
+        font-size: 50px;
+        width: 25%;
+        &::before{
+            @include before;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f21c";
+        }
+    }   
+    &__volleyball{
+        border: 5px solid $color-primary;
+        font-size: 50px;
+        width: 25%;
+        position: relative;
+        &::before{
+            @include before;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f45f";
+            position: absolute;
+            top: 11%;
+            right: 11%;
+        }
+    }
+    &__cinema{
+        border: 5px solid $color-primary;
+        font-size: 50px;
+        width: 25%;
+        &::before{
+            @include before;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f008";
+        }
+    }
+}
+
 .section-holder{
     width: 67%;
     padding:0 $padding-right;
@@ -78,11 +123,7 @@
             width: 95%;
         }
         &::before{
-            display: inline-block;
-            font-style: normal;
-            font-variant: normal;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
+            @include before;
             margin-right: 30px;
             color: $color-secondary;
         }
@@ -95,8 +136,18 @@
     }
     &__date{
         min-width: 14%;
-        margin-right: $margin-right*5;
+        margin-right: $margin-right*3;
+        margin-left: $margin-left*2;
         margin-bottom: $margin-bottom;
+        position: relative;
+        &::before{
+            @include before;
+            color: $color-secondary;
+            position: absolute;
+            left: -30px;
+            top: 6px;
+
+        }
     }       
     &__description{
         min-width: 60%;
@@ -133,5 +184,20 @@
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: "\f0b1";
+    }
+}
+.date-actuelle{
+    &::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f192";
+    }
+}
+.date-passee{
+    &::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 400; 
+    font-size: .7rem;
+    content: "\f111";
     }
 }
