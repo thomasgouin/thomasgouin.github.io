@@ -5857,6 +5857,24 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+/*!
+ * Font Awesome Free 5.12.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("./webfonts/fa-solid-900.eot");
+  src: url("./webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-solid-900.woff2") format("woff2"), url("./webfonts/fa-solid-900.woff") format("woff"), url("./webfonts/fa-solid-900.ttf") format("truetype"), url("./webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
 *, ::before, ::after {
   box-sizing: border-box;
   font-family: "Poppins";
@@ -5921,7 +5939,6 @@ h4 {
 .header {
   display: flex;
   flex-direction: row;
-  border: blue 5px solid;
 }
 .header__photo {
   width: 33%;
@@ -5990,7 +6007,7 @@ h4 {
   margin-left: 70px;
 }
 .section__h2 {
-  padding-left: 60px;
+  padding-left: 10px;
   position: relative;
   margin-bottom: 25px;
 }
@@ -6003,9 +6020,13 @@ h4 {
   width: 95%;
 }
 .section__h2::before {
-  content: "";
-  position: absolute;
-  left: -20px;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 30px;
+  color: #2196f3;
 }
 .section__container {
   display: flex;
@@ -6032,6 +6053,24 @@ h4 {
 .section__container-reco__nom {
   text-transform: uppercase;
   line-height: 2em;
+}
+
+.formation__h2::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+
+.experience__h2::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+
+.recommandation__h2::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 730px) {

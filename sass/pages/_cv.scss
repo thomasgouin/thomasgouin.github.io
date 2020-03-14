@@ -3,7 +3,6 @@
 .header{
     display: flex;
     flex-direction: row;
-    border: blue 5px solid;
     &__photo{
         width:33%;
         min-width: 160px;
@@ -67,7 +66,7 @@
 .section{
     margin-left: $margin-left*3.5;
     &__h2{
-        padding-left: $padding-left*6;
+        padding-left: $padding-left;
         position: relative;
         margin-bottom: $margin-bottom;
         &::after{
@@ -79,9 +78,13 @@
             width: 95%;
         }
         &::before{
-            content:"\f303";
-            position: absolute;
-            left: -20px;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            margin-right: 30px;
+            color: $color-secondary;
         }
     }
     &__container{
@@ -109,5 +112,26 @@
             text-transform: uppercase;
             line-height: 2em;
         }
+    }
+}
+.formation__h2{
+    &::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f19d";
+    }
+}
+.experience__h2{
+    &::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f303";
+    }
+}
+.recommandation__h2{
+    &::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f0b1";
     }
 }
