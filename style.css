@@ -5883,8 +5883,6 @@ readers do not read off random characters that represent icons */
 
 body {
   max-width: 1024px;
-  margin: 20px auto;
-  box-shadow: 10px 5px 20px black;
 }
 
 img {
@@ -5900,7 +5898,7 @@ a {
 p {
   color: #454647;
   font-weight: 100;
-  font-size: 1em;
+  font-size: 0.8em;
   line-height: 1.3em;
 }
 
@@ -5908,14 +5906,14 @@ h1 {
   color: #2196f3;
   font-weight: 100;
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 h2 {
   text-transform: uppercase;
   color: black;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.6em;
   line-height: 1em;
 }
 
@@ -5932,28 +5930,32 @@ h4 {
   text-transform: uppercase;
   color: #454647;
   font-weight: 200;
-  font-size: 1.6em;
+  font-size: 1.2em;
   margin: 0;
 }
 
 .header {
   display: flex;
   flex-direction: row;
+  height: 280px;
 }
 .header__photo {
   width: 33%;
-  min-width: 160px;
-  padding: 5%;
   background-color: #2196f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__photo__thomas {
   border-radius: 50%;
+  width: 60%;
+  margin: auto;
 }
 .header__titre {
   width: 67%;
-  line-height: 60px;
+  line-height: 0.8em;
   margin: auto 0;
-  padding-left: 70px;
+  padding-left: 40px;
 }
 .header__titre__span {
   color: #454647;
@@ -5983,12 +5985,17 @@ h4 {
   width: 33%;
   min-width: 160px;
   background-color: #2196f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .aside__h3 {
   height: 45px;
 }
 .aside__paragraph {
-  margin: 25px 20px;
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
   text-align: justify;
 }
 .aside__link {
@@ -6001,14 +6008,19 @@ h4 {
 .icones-loisir {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   color: #454647;
   margin-top: 25px;
+  padding-bottom: 30px;
 }
 .icones-loisir__motorcycle {
   border: 5px solid #454647;
-  font-size: 50px;
-  width: 25%;
+  font-size: 2rem;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 .icones-loisir__motorcycle::before {
   display: inline-block;
@@ -6019,12 +6031,17 @@ h4 {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
+  position: absolute;
+  top: 13px;
+  left: 11px;
 }
 .icones-loisir__volleyball {
   border: 5px solid #454647;
-  font-size: 50px;
-  width: 25%;
+  font-size: 2rem;
+  height: 70px;
+  width: 70px;
   position: relative;
+  border-radius: 50%;
 }
 .icones-loisir__volleyball::before {
   display: inline-block;
@@ -6036,13 +6053,17 @@ h4 {
   font-weight: 900;
   content: "";
   position: absolute;
-  top: 11%;
-  right: 11%;
+  top: 13px;
+  left: 14px;
 }
 .icones-loisir__cinema {
   border: 5px solid #454647;
-  font-size: 50px;
-  width: 25%;
+  font-size: 2rem;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  border-radius: 50%;
+  margin-left: 20px;
 }
 .icones-loisir__cinema::before {
   display: inline-block;
@@ -6053,18 +6074,22 @@ h4 {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
+  position: absolute;
+  top: 13px;
+  left: 14px;
 }
 
 .section-holder {
   width: 67%;
-  padding: 0 10px;
+  margin-top: 25px;
+  padding-left: 20px;
 }
 
 .section {
-  margin-left: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .section__h2 {
-  padding-left: 10px;
   position: relative;
   margin-bottom: 25px;
 }
@@ -6111,14 +6136,14 @@ h4 {
 }
 .section__description {
   min-width: 60%;
-  max-width: 400px;
+  max-width: 380px;
+  margin-left: 40px;
 }
 .section__job {
   line-height: 2.2em;
 }
 .section__container-reco {
   margin-right: 80px;
-  margin-bottom: 25px;
 }
 .section__container-reco__nom {
   text-transform: uppercase;
@@ -6134,13 +6159,13 @@ h4 {
 .experience__h2::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "";
+  content: "";
 }
 
 .recommandation__h2::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "";
+  content: "";
 }
 
 .date-actuelle::before {

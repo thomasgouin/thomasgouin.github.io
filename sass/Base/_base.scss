@@ -6,8 +6,7 @@
 
 body{
     max-width: 1024px;
-    margin: 20px auto;
-    box-shadow: 10px 5px 20px black;
+    
 }
 img{
     max-width: 100%;
@@ -22,7 +21,7 @@ a{
 p{
     color: $color-primary;
     font-weight: 100;
-    font-size: 1em;
+    font-size: .8em;
     line-height: 1.3em;
     
 }
@@ -31,14 +30,14 @@ h1{
     color: $color-secondary;
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 h2{
     text-transform: uppercase;
     color: $color-third;
     font-weight: 600;
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 1em;
 }
 h3{
@@ -53,6 +52,6 @@ h4{
     text-transform: uppercase;
     color:$color-primary;
     font-weight: 200;
-    font-size:1.6em;
+    font-size:1.2em;
     margin: 0;
 }
