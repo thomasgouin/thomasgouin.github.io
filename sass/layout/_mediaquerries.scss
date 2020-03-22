@@ -1,4 +1,4 @@
-@media only screen and (min-device-width : 320px) and (max-device-width : 730px) {
+@media only screen and (max-device-width : 730px) {
     body{
         max-width: auto;
         margin: 0;
@@ -45,19 +45,23 @@
         margin-top: $margin-top;
         margin-bottom: $margin-bottom;
         &__paragraph{
-            margin-top: $margin-top/2;
-            margin-bottom: $margin-bottom/2;
+            margin-top: $margin-top;
+            margin-bottom: $margin-bottom;
             margin-left: $margin-left;
-            display: none;
-           
+            margin-right: $margin-right;
         }
         &__h3{
             border-radius: 10px;
             margin-bottom: $margin-bottom/2;
         }
     }
+    .contact__paragraphes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .icones-loisir{
-        display: none;
+        padding-bottom: 0;
     }
     .section-holder{
         width: 100%;
@@ -73,6 +77,9 @@
             margin-right: auto;
             margin-left: auto;
             margin-bottom: $margin-bottom;
+        }
+        &__description{
+            max-width: 600px;
         }
     }
 }
@@ -102,7 +109,8 @@ p{
         box-shadow: $color-primary 5px 5px 5px;
     }
     .header{
-        margin-top: 2%;
+        margin-top: 10%;
+        margin-bottom: auto;
     }
     p{
         font-size: 0.8em;

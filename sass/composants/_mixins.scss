@@ -1,7 +1,27 @@
-@mixin before {
+@mixin pictos-sections {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+    color: $color-secondary;
+}
+
+@mixin div-pictos-loisirs {
+    border: 5px solid $color-primary;
+    font-size: 2rem;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    border-radius: 50%;
+}
+@mixin pictos-loisirs{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    position: absolute;
 }

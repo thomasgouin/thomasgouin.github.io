@@ -77,54 +77,30 @@
     margin-top: $margin-top;
     padding-bottom: $padding-bottom*2;
     &__motorcycle{
-        border: 5px solid $color-primary;
-        font-size: 2rem;
-        height: 70px;
-        width: 70px;
-        position: relative;
-        border-radius: 50%;
+        @include div-pictos-loisirs;
         margin-right: $margin-right;
         &::before{
-            @include before;
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900; 
+            @include pictos-loisirs;
             content: "\f21c";
-            position: absolute;
             top: 13px;
             left: 11px;
         }
     }   
     &__volleyball{
-        border: 5px solid $color-primary;
-        font-size: 2rem;
-        height: 70px;
-        width: 70px;
-        position: relative;
-        border-radius: 50%;
+        @include div-pictos-loisirs;
         &::before{
-            @include before;
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900; 
+            @include pictos-loisirs; 
             content: "\f45f";
-            position: absolute;
             top: 13px;
             left: 14px;
         }
     }
     &__cinema{
-        border: 5px solid $color-primary;
-        font-size: 2rem;
-        height: 70px;
-        width: 70px;
-        position: relative;
-        border-radius: 50%;
+        @include div-pictos-loisirs;
         margin-left: $margin-left;
         &::before{
-            @include before;
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900; 
+            @include pictos-loisirs;
             content: "\f008";
-            position: absolute;
             top: 13px;
             left: 14px;
         }
@@ -151,9 +127,8 @@
             width: 95%;
         }
         &::before{
-            @include before;
+            @include pictos-sections;
             margin-right: 30px;
-            color: $color-secondary;
         }
     }
     &__container{
@@ -169,8 +144,7 @@
         margin-bottom: $margin-bottom;
         position: relative;
         &::before{
-            @include before;
-            color: $color-secondary;
+            @include pictos-sections;
             position: absolute;
             left: -30px;
             top: 6px;
